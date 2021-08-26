@@ -14,7 +14,7 @@ class SingleTonDemo {
 }
 
 const reference: SingleTonDemo = SingleTonDemo.getInstance();
-// const reference2: SingleTonDemo = SingleTonDemo.getInstance();
-const reference2: any = SingleTonDemo.getInstance();
+const reference2: SingleTonDemo = SingleTonDemo.getInstance();
+// const reference2: any = SingleTonDemo.getInstance();
 
 console.log(reference === reference2);
